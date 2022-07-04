@@ -6,6 +6,7 @@ import Sun from './icons/Sun.vue'
 import Moon from './icons/Moon.vue'
 import Share from './icons/Share.vue'
 import GitHub from './icons/GitHub.vue'
+import logo from '../../public/logo.png'
 const props = defineProps(['store', 'dev', 'ssr'])
 const { store } = props
 const activeVueVersion = ref(``)
@@ -59,7 +60,7 @@ onMounted(async () => {
 <template>
   <nav>
     <h1>
-      <img alt="logo" src="/logo.svg" />
+      <img alt="logo" :src="logo" />
       <span>Ant Design Vue Playground</span>
     </h1>
     <div class="links">

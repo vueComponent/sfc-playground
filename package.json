@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "cross-env NODE_ENV=development vite",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -29,6 +29,7 @@
     "@types/node": "18.0.0",
     "@vitejs/plugin-vue": "2.3.3",
     "@vue/runtime-core": "3.2.37",
+    "cross-env": "^7.0.3",
     "eslint": "8.18.0",
     "typescript": "4.7.4",
     "vite": "2.9.13"
