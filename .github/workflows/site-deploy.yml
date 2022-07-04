@@ -2,7 +2,7 @@
 
 name: Deploy website
 on:
-  create
+  push
 
 permissions:
   contents: read
